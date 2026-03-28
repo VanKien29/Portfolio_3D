@@ -27029,12 +27029,12 @@ class rM {
 const oM = [
     {
       id: 0,
-      name: "Tour Management Website",
-      description: "A tour management website for browsing destinations, booking tours, and managing travel plans.",
-      image: "images/projects/ToursProject.png",
-      tags: ["javascript", "php", "html", "css", "ui"],
-      github: "https://github.com/VanKien29/Tech4Tourism.git",
-      alt: "Tour Management Website",
+      name: "coming_soon",
+      description: "Coming Soon",
+      image: "images/projects/comming_soon.jpg",
+      tags: ["javascript", "react", "ui", "framer"],
+      status: "coming_soon",
+      alt: "coming_soon",
     },
     {
       id: 1,
@@ -27045,14 +27045,14 @@ const oM = [
       github: "https://github.com/cnghown/WEB_MANGUON.git",
       alt: "E-commerce Source Code Website",
     },
-    {
+	{
       id: 2,
-      name: "coming_soon",
-      description: "Coming Soon",
-      image: "images/projects/comming_soon.jpg",
-      tags: ["javascript", "react", "ui", "framer"],
-      status: "coming_soon",
-      alt: "coming_soon",
+      name: "Tour Management Website",
+      description: "A tour management website for browsing destinations, booking tours, and managing travel plans.",
+      image: "images/projects/ToursProject.png",
+      tags: ["javascript", "php", "html", "css", "ui"],
+      github: "https://github.com/VanKien29/Tech4Tourism.git",
+      alt: "Tour Management Website",
     },
     {
       id: 3,
