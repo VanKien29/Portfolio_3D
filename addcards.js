@@ -37,12 +37,12 @@ const oM = [
   },
   {
     id: 4,
-    name: "Open Talk",
-    description: "Coming Soon",
-    image: "images/projects/opentalk.jpeg",
-    tags: ["react", "mongodb", "express"],
-    status: "coming_soon",
-    alt: "Open Talk Platform",
+    name: "NRO Horizon Game Platform",
+    description: "A Laravel-powered web game platform with player accounts, community features, shop and top-up flows, admin tools, and a browser WebGL game.",
+    image: "images/projects/NRO_Horizon.png",
+    tags: ["php/laravel", "vuejs", "javascript", "game"],
+    github: "https://github.com/VanKien29/Web_game.git",
+    alt: "NRO Horizon Game Platform",
   },
 ];
 
@@ -104,8 +104,8 @@ class lM {
       return t;
     }
 
-    // GitHub link for projects 0 and 1
-    if (e.id === 0 || e.id === 1) {
+    // GitHub link for projects with a repository
+    if (e.github) {
       t = `
           <div id="work-item-orange-button-${e.id}" class="work-item-orange-button small-button center orange-hover" style="width: 100%; margin: 0;">
               GitHub
@@ -138,8 +138,8 @@ class lM {
       t.classList.contains("work-inactive-item-container") && document.getElementById("work-item-0").classList.contains("work-item-container-transition") && ((this.experience.ui.work.cards.currentItemIndex = -e.id + 4), this.experience.ui.work.cards.updatePositions(), this.sounds.play("buttonClick"));
     });
 
-    // Handle GitHub link for projects 0 and 1
-    if (e.id === 0 || e.id === 1) {
+    // Handle GitHub link for projects with a repository
+    if (e.github) {
       const githubBtn = document.getElementById("work-item-orange-button-" + e.id);
       if (githubBtn) {
         githubBtn.addEventListener("click", (n) => {

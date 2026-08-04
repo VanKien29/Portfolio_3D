@@ -27041,11 +27041,11 @@ const oM = [
       name: "E-commerce Source Code Website",
       description: "An e-commerce platform for buying and selling website source code and digital products.",
       image: "images/projects/E-commerce_Source_Code_Website.png",
-      tags: ["php/laravel", "vuejs", "javascript", "tailwind"],
+      tags: ["php/laravel", "javascript", "tailwind", "github"],
       github: "https://github.com/cnghown/WEB_MANGUON.git",
       alt: "E-commerce Source Code Website",
     },
-	{
+    {
       id: 2,
       name: "Tour Management Website",
       description: "A tour management website for browsing destinations, booking tours, and managing travel plans.",
@@ -27056,21 +27056,21 @@ const oM = [
     },
     {
       id: 3,
-      name: "coming_soon",
-      description: "Coming Soon",
-      image: "images/projects/comming_soon.jpg",
-      tags: ["javascript", "react", "mongodb", ""],
-      status: "coming_soon",
-      alt: "coming_soon",
+      name: "SportGo – Sports Booking Platform",
+      description: "Developed SportGo with Laravel and Vue 3, implementing booking, payment, refund, marketplace, community, and venue management features.",
+      image: "images/projects/SportGo.png",
+      tags: ["php/laravel", "vuejs", "javascript", "tailwind"],
+      github: "https://github.com/VanKien29/SportGo.git",
+      alt: "SportGo – Sports Booking Platform",
     },
     {
       id: 4,
-      name: "coming_soon",
-      description: "Coming Soon",
-      image: "images/projects/comming_soon.jpg",
-      tags: ["react", "mongodb", "express"],
-      status: "coming_soon",
-      alt: "coming_soon",
+      name: "NRO Horizon Game Platform",
+      description: "A Laravel-powered web game platform with player accounts, community features, shop and top-up flows, admin tools, and a browser WebGL game.",
+      image: "images/projects/NRO_Horizon.png",
+      tags: ["php/laravel", "vuejs", "javascript", "game"],
+      github: "https://github.com/VanKien29/Web_game.git",
+      alt: "NRO Horizon Game Platform",
     },
   ],
   aM = {
@@ -27086,6 +27086,7 @@ const oM = [
     freelance: '<div class="work-item-tag" style="background:rgb(73, 143, 248);">Freelancs</div>',
     ui: '<div class="work-item-tag" style="background: #CA49F8;">UI Design</div>',
     tailwind: '<div class="work-item-tag" style="background:rgb(49, 121, 27);">Tailwind</div>',
+    github: '<div class="work-item-tag" style="background: #24292f;">GitHub</div>',
     php: '<div class="work-item-tag" style="background:rgb(48, 136, 236);">PHP</div>',
     game: '<div class="work-item-tag" style="background: #e86ef0;">Game</div>',
     framer: '<div class="work-item-tag" style="background: #e86ef0;">Framer</div>',
@@ -27185,8 +27186,8 @@ class lM {
       return t;
     }
 
-    // GitHub link for projects 0 and 1
-    if (e.id === 0 || e.id === 1) {
+    // GitHub link for projects with a repository
+    if (e.github) {
       t = `
             <div id="work-item-orange-button-${e.id}" class="work-item-orange-button small-button center orange-hover" style="width: 100%; margin: 0;">
                 GitHub
@@ -27264,8 +27265,8 @@ class lM {
       }
     });
 
-    // Handle GitHub link for projects 0 and 1
-    if (e.id === 0 || e.id === 1) {
+    // Handle GitHub link for projects with a repository
+    if (e.github) {
       const githubBtn = document.getElementById("work-item-orange-button-" + e.id);
       if (githubBtn) {
         githubBtn.addEventListener("click", (n) => {
